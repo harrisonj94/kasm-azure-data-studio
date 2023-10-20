@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -ex
 
-START_COMMAND="azuredatastudio"
+START_COMMAND="azuredatastudio --no-sandbox --user-data-dir /home/kasm-user/"
 PGREP="azuredatastudio"
 export MAXIMIZE="true"
 export MAXIMIZE_NAME="Azure Data Studio"
