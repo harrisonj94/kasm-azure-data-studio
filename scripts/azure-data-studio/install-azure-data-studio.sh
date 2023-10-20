@@ -5,7 +5,7 @@ set -ex
 ARCH=$(arch | sed 's/aarch64/arm64/g' | sed 's/x86_64/amd64/g')
 
 # Download Azure Data Studio .deb package
-wget -q https://azuredatastudio-update.azurewebsites.net/latest/linux-deb-${ARCH} -O azure_data_studio.deb
+wget -q https://azuredatastudio-update.azurewebsites.net/latest/linux-deb-x64/stable -O azure_data_studio.deb
 
 # Install Azure Data Studio
 apt-get update
